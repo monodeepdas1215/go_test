@@ -28,7 +28,7 @@ func UpsertTransactionService(trId string, reqJson *models.AddTransactionRequest
 	return data_store.AppDb.UpsertTransactionDetails(details)
 }
 
-func GetRequestedDetails(queryType string, val interface{}) (interface{}, error) {
+func GetTransactionDetailsService(queryType string, val interface{}) (interface{}, error) {
 
 	filter := make(map[string]interface{})
 

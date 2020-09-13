@@ -45,7 +45,7 @@ func GetTransactionTypesController(ctx *gin.Context) {
 	queryType := ctx.Param("queryType")
 	val := ctx.Param("val")
 
-	data, err := services.GetRequestedDetails(queryType, val)
+	data, err := services.GetTransactionDetailsService(queryType, val)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

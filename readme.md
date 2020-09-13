@@ -1,7 +1,7 @@
 
 ## go_test
 
-go_test is a RESTful web service
+go_test is a RESTful web service to store transaction information and query them as per the user requirements and return the data in json format.
 
 ### Tech Stack
 
